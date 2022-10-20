@@ -11,6 +11,13 @@ html, .page-content {
   background-color: #2a2a3f;
 }
 
+.page{
+
+  background-color: #2a2a3f;
+
+  
+}
+
 :root {
   --f7-theme-color: violet;
   --f7-theme-color-rgb:rgb(87, 2, 87);

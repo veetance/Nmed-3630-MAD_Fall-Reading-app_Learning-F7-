@@ -14,9 +14,7 @@ var app = new Framework7({
         path: '/index/',
         url: 'index.html',
       },
-
-    
-
+      
 
       {
         path: '/',
@@ -26,14 +24,8 @@ var app = new Framework7({
         path: '/page2/',
         url: 'pages/page2.html',
       },
-      {
-        path: '/',
-        url: 'index.html',
-      },
-      {
-        path: '/page3/',
-        url: 'pages/page3.html',
-      },
+      
+      
     ],
 
    
