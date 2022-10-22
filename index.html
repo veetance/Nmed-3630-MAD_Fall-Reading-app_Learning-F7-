@@ -9,6 +9,8 @@
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
@@ -28,8 +30,78 @@
       <!-- panel components go here -->
 
       <!-- Right panel, with cover effect -->
+      
       <div class="panel panel-right panel-cover">
-        ... panel content goes here ..
+        <div class="navbar panel-nav">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+            
+            <div class="left">
+              <a class="link icon-only">
+                <i class="icon f7-icons if-not-md">person_circle_fill
+                  <span class="badge color-red">5</span>
+                </i>
+                <i class="icon material-icons md-only">person
+                  <span class="badge color-red">5</span>
+                </i>
+              </a>
+            </div>
+
+            <div class="user">Username</div>
+          </div>
+        </div>
+
+
+          <div class="list ">
+          <ul >
+              <p>MENU<p>  
+          </ul>
+      </div>
+
+      <div class="list ">
+          <ul >
+            <a class="material-symbols-outlined list-img">Settings</a>
+              <br>Setting</br>  
+          </ul>
+      </div>
+
+      <div class="list ">
+        <ul >
+          <a class="material-symbols-outlined list-img">Settings</a>
+            <br>Setting</br>  
+        </ul>
+    </div>
+
+    <div class="list">
+      <ul >
+        <a class="material-symbols-outlined list-img">Settings</a>
+          <br>Setting</br>  
+      </ul>
+  </div>
+
+  <div class="list ">
+    <ul >
+      <a class="material-symbols-outlined list-img">Settings</a>
+        <br>Setting</br>  
+    </ul>
+</div>
+
+<div class="list ">
+  <ul >
+
+    <div class="button button-outline no-ripple ">
+      <a href="#" class="#" data-panel="right">
+        Logout
+      </a>
+    </div>
+    
+  </ul>
+</div>
+
+
+
+
+
       </div>
 
       <div class="view view-main">
@@ -68,29 +140,85 @@
                 <span class="selected_topic"><h2>The Pumpkin Man?</h2> </span>
               </div>
 
-              <div class="card-content imgg">
-                <img
-                  src="../www/img/Pumkin_man _dalle_2-prompt-futur_of_pumpkin_ man..jpg"
-                  alt="Futur of pumpkinman"
-                />
+              <div class="card-content imgg ">
+
+                <img class="elevation-demo elevation-7"
+                  src="../www/img/Pumpkn-man/Pumkin_man _dalle_2-prompt-futur_of_pumpkin_ man..jpg"
+                  alt="Futur of pumpkinman">
+                </img>
+
+                <div id="container">
+                  <div class="heart-like-button"></div>
+                 
+                </div>
+
+              
+
               </div>
 
               <div class="card-content card-content-padding">
-                <span><h2>Your curiosity Ends Here</h2></span>
-                <p>
-                  Using the power of AI Magic we bring you fun Weekly dreams
-                  about the future of unespected topics
-                </p>
+
+                <div class="styled_header">
+                  <span
+                    ><h3>Your curiosity,</h3>
+                    <span><h3>ends here!</h3></span>
+                  </span>
+                </div>
+
+                  <div class="card-paragraph">
+                    <p>
+                      Using the power of AI Magic we bring you fun Weekly dreams
+                      about the future of unespected topics
+                    </p> 
+                  </div>
+                
               </div>
 
               <div class="card-footer">
-                <div class="button button-outline">
-                  <a href="#" class="panel-open" data-panel="right">
+
+                <div class="button button-outline no-ripple ">
+                  <a href="#" class="#" data-panel="right">
                     Sign Up
                   </a>
                 </div>
               </div>
+
+
             </div>
+
+            <div class="more-header p-header">
+
+              <h2>More Dreams</h2>
+
+
+            </div>
+
+            <div class="home-grid">
+              
+              <div class="grid-imgs ">
+
+          
+              <img class="elevation-demo elevation-1"
+              src="../www/img/Pumpkn-man/2.jpg"
+              alt="Futur of pumpkinman"/>
+  
+              <img class="elevation-demo elevation-1"
+              src="../www/img/Pumpkn-man/3.jpg"
+              alt="Futur of pumpkinman"/>
+  
+              <img class="elevation-demo elevation-1"
+              src="../www/img/Pumpkn-man/4.jpg"
+              alt="Futur of pumpkinman"/>
+  
+              <img class="elevation-demo elevation-1"
+              src="../www/img/Pumpkn-man/5.jpg"
+              alt="Futur of pumpkinman"/>
+            </div>
+          
+          </div>
+            
+
+           
           </div>
         </div>
 
@@ -116,5 +244,6 @@
     <!-- javascript links -->
     <script src="js/framework7-bundle.min.js"></script>
     <script src="js/FOF.js"></script>
+    <script src="js/jquery.js"></script>
   </body>
 </html>
