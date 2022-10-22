@@ -26,76 +26,81 @@
 
     <!-- Right panel, with cover effect -->
 
-    <div class="panel panel-right panel-cover">
-      <div class="navbar panel-nav">
-        <div class="navbar-bg"></div>
-        <div class="navbar-inner">
+    <div class="panel panel-right panel-cover ">
 
-          <div class="left">
-            <a class="link icon-only">
-              <i class="icon f7-icons if-not-md">person_circle_fill
-                <span class="badge color-red">5</span>
-              </i>
-              <i class="icon material-icons md-only">person
-                <span class="badge color-red">5</span>
-              </i>
-            </a>
+      <div class="panel-wrapper"> 
+
+        <div class="navbar panel-nav">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+  
+            <div class="left">
+              <a class="link icon-only">
+                <i class="icon f7-icons if-not-md">person_circle_fill
+                  <span class="badge color-red">5</span>
+                </i>
+                <i class="icon material-icons md-only">person
+                  <span class="badge color-red">5</span>
+                </i>
+              </a>
+            </div>
+  
+            <div class="user">Username</div>
           </div>
-
-          <div class="user">Username</div>
         </div>
+  
+  
+        <div class="list ">
+          <ul>
+            <p>MENU
+            <p>
+          </ul>
+        </div>
+  
+        <div class="list list-items">
+          <ul>
+            <a class="material-symbols-outlined list-img">Settings</a>
+            <p>Settings</p>
+          </ul>
+        </div>
+  
+        <div class="list ">
+          <ul>
+            <a class="material-symbols-outlined list-img">Settings</a>
+            <p>privacy</p>
+          </ul>
+        </div>
+  
+        <div class="list">
+          <ul>
+            <a class="material-symbols-outlined list-img">Settings</a>
+            <p>About Us</p>
+          </ul>
+        </div>
+  
+        <div class="list ">
+          <ul>
+            <a class="material-symbols-outlined list-img">Settings</a>
+            <p>Appearance</p>
+          </ul>
+        </div>
+  
+        <div class="list ">
+          <ul>
+  
+            <div class="button button-outline no-ripple ">
+              <a href="#" class="#" data-panel="right">
+                Logout
+              </a>
+            </div>
+  
+          </ul>
+        </div>
+
+
       </div>
 
-
-      <div class="list ">
-        <ul>
-          <p>MENU
-          <p>
-        </ul>
-      </div>
-
-      <div class="list ">
-        <ul>
-          <a class="material-symbols-outlined list-img">Settings</a>
-          <br>Setting</br>
-        </ul>
-      </div>
-
-      <div class="list ">
-        <ul>
-          <a class="material-symbols-outlined list-img">Settings</a>
-          <br>Setting</br>
-        </ul>
-      </div>
-
-      <div class="list">
-        <ul>
-          <a class="material-symbols-outlined list-img">Settings</a>
-          <br>Setting</br>
-        </ul>
-      </div>
-
-      <div class="list ">
-        <ul>
-          <a class="material-symbols-outlined list-img">Settings</a>
-          <br>Setting</br>
-        </ul>
-      </div>
-
-      <div class="list ">
-        <ul>
-
-          <div class="button button-outline no-ripple ">
-            <a href="#" class="#" data-panel="right">
-              Logout
-            </a>
-          </div>
-
-        </ul>
-      </div>
-
-
-
+      
 
 
     </div>
@@ -120,7 +125,7 @@
         </div>
       </div>
 
-      <div data-name="home" class="page">
+      <div data-name="home" class="page page-homepage">
         <!-- component is fixed to the page -->
 
         <div class="page-content">
@@ -139,8 +144,8 @@
 
             <div class="card-content imgg ">
 
-              <img class="elevation-demo elevation-7"
-                src="../www/img/Pumpkn-man/Pumkin_man _dalle_2-prompt-futur_of_pumpkin_ man..jpg"
+              <img class="elevation-demo elevation-7 featured-img"
+                src="../www/img/Pumpkn-man/1.jpg"
                 alt="Futur of pumpkinman">
               </img>
 
@@ -203,7 +208,7 @@
           <div class="home-grid">
 
             <div class="grid-imgs ">
-
+              
               <img class="elevation-demo elevation-1" src="../www/img/Pumpkn-man/2.jpg" alt="Futur of pumpkinman" />
 
               <img class="elevation-demo elevation-1" src="../www/img/Pumpkn-man/3.jpg" alt="Futur of pumpkinman" />
@@ -214,9 +219,16 @@
 
             </div>
 
-            <p>  All Images were Generated using Stable Diffusion and Dalle 2</p>
+            <div class="  p-header">
+
+              <h2> All Images were generated using Stable diffusion and Dalle 2</h2>
+            </div>
+
+            
 
           </div>
+
+          
 
 
 
@@ -228,6 +240,7 @@
       <!-- Bottom Toolbar -->
       <div class="toolbar toolbar-bottom">
         <div class="toolbar-inner">
+          
           <div class="bottom-links">
             <a href="/index/" class="link">Home</a>
 
@@ -249,4 +262,5 @@
   <script src="js/FOF.js"></script>
   <script src="js/jquery.js"></script>
 </body>
+
 </html>
