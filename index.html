@@ -2,24 +2,25 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8"/>
 
-  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover" />
+  <meta http-equiv="Content-Security-Policy" content="connect-src *;">
+
+  <title>Futur_0F</title>
+
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <link rel="stylesheet" href="../www/css/framework7-bundle.min.css" />
   <link rel="stylesheet" href="../www/css/framework7-icons.css" />
-  <link rel="stylesheet" href="../www/css/styles.css" />
+  <link rel="stylesheet" href="../www/css/styles.css"/>
 
-  <title>Futur_0F</title>
 </head>
 
 <body>
@@ -52,12 +53,7 @@
         </div>
 
 
-        <div class="list ">
-          <ul>
-            <p>MENU
-            <p>
-          </ul>
-        </div>
+        
 
         <div class="list list-items">
           <ul>
@@ -68,26 +64,26 @@
 
         <div class="list ">
           <ul>
-            <a class="material-symbols-outlined list-img">Settings</a>
+            <a class="material-symbols-outlined list-img">Shield</a>
             <p>privacy</p>
           </ul>
         </div>
 
         <div class="list">
           <ul>
-            <a class="material-symbols-outlined list-img">Settings</a>
+            <a class="material-symbols-outlined list-img">Supervisor_Account</a>
             <p>About Us</p>
           </ul>
         </div>
 
         <div class="list ">
           <ul>
-            <a class="material-symbols-outlined list-img">Settings</a>
+            <a class="material-symbols-outlined list-img">Format_Paint</a>
             <p>Appearance</p>
           </ul>
         </div>
 
-        <div class="list ">
+        <div id="Logout" class="list ">
           <ul>
 
             <div class="button button-outline no-ripple ">
@@ -147,22 +143,9 @@
             <div class="card-content imgg ">
 
               <img class="elevation-7" src="../www/css/img/Pumpkn-man/1.jpg" alt="Futur of pumpkinman">
-              </img>
+              
 
-              <div id="container">
-
-                <div class="heart-button">
-
-
-                  <div class="heart-like-button"></div>
-
-
-                </div>
-
-
-              </div>
-
-
+    
 
             </div>
 
@@ -207,19 +190,21 @@
 
           <div class="home-grid">
 
-            <div class="grid-imgs ">
+            <div class="grid-imgs">
 
-              <img class="elevation-demo elevation-1" src="../www/css/img/Pumpkn-man/2.jpg" alt="Futur of pumpkinman" />
 
-              <img class="elevation-demo elevation-1" src="../www/css/img/Pumpkn-man/3.jpg" alt="Futur of pumpkinman" />
 
-              <img class="elevation-demo elevation-1" src="../www/css/img/Pumpkn-man/4.jpg" alt="Futur of pumpkinman" />
+              <img src="../www/css/img/Pumpkn-man/2.jpg" class="elevation-demo elevation-1" alt="Futur of pumpkinman" />
 
-              <img class="elevation-demo elevation-1" src="../www/css/img/Pumpkn-man/5.jpg" alt="Futur of pumpkinman" />
+              <img src="../www/css/img/Pumpkn-man/3.jpg" class="elevation-demo elevation-1" alt="Futur of pumpkinman" />
+
+              <img src="../www/css/img/Pumpkn-man/4.jpg" class="elevation-demo elevation-1" alt="Futur of pumpkinman" />
+
+              <img src="../www/css/img/Pumpkn-man/5.jpg" class="elevation-demo elevation-1" alt="Futur of pumpkinman" />
 
             </div>
 
-            <div class="  p-header">
+            <div class="p-header">
 
               <h2> All Images were generated using Stable diffusion and Dalle 2</h2>
             </div>
@@ -242,25 +227,32 @@
         <div class="toolbar-inner">
 
           <div class="bottom-links">
-            <a href="/index/" class="link">Home</a>
 
-            <a href="/page2/" class="link">Topics</a>
+            <a href="/index/" class="link">Home</a>
+            <a href="/page3/" class="link">Topics</a>
 
             <a href="#" class="link panel-open" data-panel="right">
               <div class="panel-ico">
                 <span class="material-symbols-outlined">Person</span>
               </div>
             </a>
+
           </div>
+
         </div>
       </div>
     </div>
   </div>
 
   <!-- javascript links -->
-  <script src="js/framework7-bundle.min.js"></script>
-  <script src="js/FOF.js"></script>
-  <script src="js/jquery.js"></script>
+
+  
+  <script src="/www/js/js2/framework7-bundle.min.js"></script>
+  <script src="../www/js/reading_app.js"></script>
+  <script src="../www/js/jquery.js"></script>
+  
+  
+  
 </body>
 
 </html>
