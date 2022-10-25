@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+}
+
 body,
 html,
 .page-content {
@@ -25,18 +29,16 @@ html,
 }
 
 .page-homepage {
- 
   padding-top: 86px !important;
 }
 
 .card-expandable {
-  margin: 16px !important;
+  margin: 0px !important;
+  margin-top: 16px !important;
   border-radius: 8px !important;
 
-  height: 20vw ;
-
+  height: 30vw;
   background: linear-gradient(#2a2a3f, #3c3c4f) !important;
-  
 }
 
 .card-opened .card-content {
@@ -44,64 +46,88 @@ html,
   padding-top: 86px !important;
 }
 
-
-
-#h-glass{
-
-background: url(../css/img/Hour-glass/4.jpg);  
-}
-
-#L-bulb{
-
-  background: url(../css/img/bulb/8.jpg);  
-  }
-
-#computer{
-  background: url(../css/img/computer/17.jpg); 
-}
-
-#teddies{
-  background: url(../css/img/Teddies/6.jpg); 
-}
-
-#fire-elmt{
-  background: url(../css/img/Pumpkn-man/lighter/2.jpg); 
-}
-  
-
-.bg-img {
-  background-color: none !important;
+#h-glass {
   background: linear-gradient(
       0deg,
-      rgba(61, 32, 5, 0.404),
-      rgba(46, 5, 29, 0.69)
+      rgba(61, 32, 5, 0.699),
+      rgba(187, 143, 21, 0.274)
     ),
-    url(/www/css/img/Pumpkn-man/1.jpg);
+    url(../img/Hour-glass/4.jpg);
+
+  background-position: 1% 80%;
+}
+
+#L-bulb {
+  background: linear-gradient(
+      0deg,
+      rgba(61, 32, 5, 0.699),
+      rgba(46, 5, 29, 0.185)
+    ),
+    url(../img/bulb/8.jpg);
+}
+
+#computer {
+  background: linear-gradient(
+      0deg,
+      rgba(61, 32, 5, 0.699),
+      rgba(46, 2, 28, 0.281)
+    ),
+    url(../img/computer/17.jpg);
+}
+
+#teddies {
+  background: linear-gradient(
+      0deg,
+      rgba(5, 45, 61, 0.699),
+      rgba(3, 88, 109, 0.164)
+    ),
+    url(../img/Teddies/6.jpg);
+}
+
+#fire-elmt {
+  background: linear-gradient(
+      0deg,
+      rgba(15, 5, 61, 0.699),
+      rgba(46, 5, 29, 0.795)
+    ),
+    url(../img/Pumpkn-man/lighter/2.jpg);
+}
+
+.bg-img {
+  background: linear-gradient(
+      0deg,
+      rgba(61, 32, 5, 0.699),
+      rgba(46, 5, 29, 0.795)
+    ),
+    url(../img/Pumpkn-man/1.jpg);
   background-position: 1% 80%;
 
   display: flex;
 
   flex-direction: row;
   justify-content: space-between;
-  height: 20vw!important;
-
   width: 100%;
 }
 
-.bg-img .card-header{
-
+.card-expandable .bg-img {
   display: flex !important;
-
   height: 100;
   width: 100%;
+
+  height: 30vw !important;
 }
 
-.bg-img h1{
+.card-expandable .card-header {
+  display: flex !important;
+  height: 100;
+  width: 100%;
 
+  height: 30vw !important;
+}
+
+.bg-img h1 {
   display: flex;
   align-items: flex-start;
-
-
 }
 
 .card-close {
@@ -133,7 +159,6 @@ img {
   display: flex;
   place-items: center !important;
 
-
   border: solid 2px violet;
   border-color: var(--f7-theme-color);
   border-radius: 8px;
@@ -158,7 +183,6 @@ img {
 }
 
 .navbar .title.sliding {
-
   margin: 0px !important;
 }
 
@@ -239,10 +263,11 @@ img {
   /* padding-top: 86px !important;  */
 }
 
-
-
 .button {
-  margin: 16px;
+  margin: 2vw;
+  padding-top: 3vw !important;
+  padding-bottom: 3vw !important;
+
   border-radius: 8px;
   padding: 24px;
   width: 100%;
@@ -252,14 +277,10 @@ img {
   transition-duration: 5ms;
 }
 
-.button:active {
-  opacity: 60%;
-}
-
 .button a {
   color: black;
 
-  font-size: 19px;
+  font-size: 4vw;
 }
 
 .selected_topic {
@@ -273,11 +294,9 @@ img {
   border-color: #ffd9ff;
   border-left: solid 2px violet;
   border-right: solid 2px violet;
-
 }
 
 .selected-topic .card-header {
-
   font-size: clamp(8vw, 5vw, 90vw) !important;
 }
 
@@ -296,7 +315,7 @@ span.material-symbols-outlined {
   align-items: center;
   justify-content: center;
   height: fit-content;
-  font-size: 2rem
+  font-size: 2rem;
 }
 
 .panel-ico {
@@ -313,6 +332,8 @@ span.material-symbols-outlined {
 
   width: 100%;
 }
+
+/* SIDE PANEL */
 
 .panel,
 .panel-right,
@@ -332,29 +353,40 @@ span.material-symbols-outlined {
   box-shadow: none !important;
 }
 
-
-
-
+.link i + i,
+.link i + span,
+.link span + i,
+.link span + span {
+  margin-left: 0px;
+  background-color: auto;
+}
 
 .panel-right .button {
   margin: 0px !important;
 }
 
-
 .panel-right .material-symbols-outlined {
   color: black;
 }
 
-.panel-right .navbar-inner{
+.panel-right .navbar-inner {
   border-radius: 6px 6px 0px 0px;
 }
 
-.panel-right #Logout{
-
+.panel-right #Logout {
   border-radius: 0px 0px 16px 16px;
   overflow: hidden;
 }
 
+#Logout a {
+  font-size: var(--f7-list-font-size);
+}
+
+#Logout .button {
+  font-size: var(--f7-list-font-size);
+  margin: 0px !important;
+  padding: 24px !important;
+}
 
 .list {
   --menu-list-offset: 0px;
@@ -382,12 +414,14 @@ span.material-symbols-outlined {
   margin-right: 16px;
 }
 
+/* //bottom nav// */
+
 .toolbar-inner {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background-color: none;
+  background-color: auto;
 
   position: relative;
 
@@ -405,21 +439,18 @@ span.material-symbols-outlined {
   grid-template-columns: 2fr 2fr 1fr;
   grid-column-gap: 8px;
 
-  padding: 8px;
+  padding: 4vw;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   width: 100%;
 }
 
-.icon-only{
-
+.icon-only {
   display: flex !important;
   width: 100% !important;
   height: 100% !important;
   padding: 2px !important;
-}
-
-.link i+i, .link i+span, .link span+i, .link span+span {
-  margin-left: 0px;
 }
 
 .bottom-links .link {
@@ -433,7 +464,6 @@ span.material-symbols-outlined {
   border: solid 2px;
   border-radius: 8px;
   border-color: var(--f7-theme-color-tint);
-
   overflow: hidden;
 }
 
@@ -454,46 +484,41 @@ span.material-symbols-outlined {
   border: none;
 }
 
-
-
 /* //i had a bug that caused the topics page 
 not to overflow wich caused the vertical scroll 
-to bugg out- will fix later  UPDATE ** Fixed*/ 
+to bugg out- will fix later  UPDATE ** Fixed*/
 
 .wrapper-page {
-display: grid;
+  display: grid;
 
-grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr;
 
   background-color: #f321e900;
-  padding: 16px 8px 16px 8px;
-  padding-bottom: 80px;
+  padding: 4vw;
+  padding-bottom: 132px;
 }
-
-
 
 .card-header {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: flex-start;
-  padding: 16px;
+  padding: 4vw;
   border: none !important;
   color: whitesmoke !important;
 }
 
 .card-header h1 {
-  font-size: clamp(8vw, 5vw, 90vw) !important;
+  font-size: clamp(6vw, 2vw, 50vw) !important;
   color: white !important;
 }
 
 .card-header small {
-  font-size: 20px;
+  font-size: clamp(3vw, 1vw, 25vw) !important;
   font-weight: 500;
+  opacity: 0.8;
 }
-
-
 
 .card-content-padding {
   position: relative;
@@ -506,10 +531,7 @@ grid-template-rows: auto 1fr;
   display: flex;
   height: fit-content;
   border-radius: 8px;
-
 }
-
-
 
 .p-header {
   margin-top: 32px;
@@ -526,7 +548,7 @@ grid-template-rows: auto 1fr;
   display: flex;
   height: 100%;
 
-  margin: 16px;
+  margin: 4vw;
 }
 
 .imgg img {
@@ -547,7 +569,7 @@ grid-template-rows: auto 1fr;
 
 .home-grid {
   padding: 4vw;
-  padding-bottom: 100px;
+  padding-bottom: 132px;
   padding-top: 0px;
 }
 
@@ -559,12 +581,9 @@ grid-template-rows: auto 1fr;
   padding-right: 4vw;
 }
 
-.card-footer .button{
-
+.card-footer .button {
   margin-left: 0px;
   margin-right: 0px;
-
-
 }
 
 h1 {
@@ -576,14 +595,14 @@ h1 {
 h2 {
   margin: 0px;
   font-weight: 500;
-  font-size: clamp( 2vw, 4vw) !important;
+  font-size: clamp(2vw, 4vw) !important;
   color: whitesmoke;
 }
 
 h3 {
   margin: 0px;
   font-weight: 700;
-  font-size: clamp( 6vw, 4vw, 20vw) !important;
+  font-size: clamp(6vw, 4vw, 20vw) !important;
   color: whitesmoke;
   height: 70%;
 }
@@ -596,19 +615,11 @@ h3 {
   box-shadow: #ffd9ff !important;
 }
 
-p {
+.card p {
   color: rgba(245, 245, 245, 0.856);
   font-weight: 300;
   font-size: clam(4vw, 2vw, 50vw) !important;
 }
-
-.card-expandable h1{
-
-  font-size: clamp(5vw, 2vw, 50vw) !important;
-
-}
-
-
 
 .card-paragraph {
   padding-left: 4vw;
@@ -616,9 +627,8 @@ p {
 }
 
 .more-header {
-  margin-left: 4vw;
-  margin-right: 4vw;
-  /* margin-top: 32px; */
+  margin-left: 0vw;
+  margin-right: 0vw;
 }
 
 .card-content-padding .more-header,
@@ -627,14 +637,10 @@ p {
   margin: 0px;
 }
 
-
-
 .card-content-padding .more-header {
   margin-bottom: 16px;
   margin-top: 32px;
 }
-
-
 
 .card-content-padding .button {
   margin-bottom: 16px;
@@ -651,8 +657,10 @@ p {
   color: violet;
 }
 
-
-
+.bottom-links .link:active {
+  opacity: 0.5 !important;
+  transform: all 1s;
+}
 
 :root {
   --f7-theme-color: violet;
@@ -672,7 +680,7 @@ p {
   --f7-card-content-padding-horizontal: 16px;
   --f7-card-content-padding-vertical: 16px;
   --f7-card-border-radius: 0px;
-  --f7-card-font-size: inherit;
+  --f7-card-font-size: clamp(2vw, 4vw, 20vw);
   --f7-card-header-text-color: whitesmoke;
   --f7-card-header-font-weight: 400;
   --f7-card-header-padding-horizontal: 16px;
@@ -712,7 +720,6 @@ p {
   --f7-panel-collapsed-width: 60px;
   --f7-panel-backdrop-bg-color: rgba(0, 0, 0, 0);
   --f7-panel-transition-duration: 300ms;
-  --f7-panel-shadow: rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 30%,rgba(0, 0, 0, 0) 40%,rgba(7, 5, 5, 0) 60%,rgba(0, 0, 0, 0) 100%;
+  --f7-panel-shadow: rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0) 40%, rgba(7, 5, 5, 0) 60%, rgba(0, 0, 0, 0) 100%;
 }
-
-
